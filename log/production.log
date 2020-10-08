@@ -1,0 +1,103 @@
+I, [2020-10-08T07:31:00.313162 #72728]  INFO -- : [daed6c43-b62d-4e39-99dc-bb2553141626] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:00 -0300
+I, [2020-10-08T07:31:00.318905 #72728]  INFO -- : [daed6c43-b62d-4e39-99dc-bb2553141626] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:00.339474 #72728]  INFO -- : [daed6c43-b62d-4e39-99dc-bb2553141626]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:00.565396 #72728]  INFO -- : [daed6c43-b62d-4e39-99dc-bb2553141626]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 225.6ms | Allocations: 68940)
+I, [2020-10-08T07:31:00.565640 #72728]  INFO -- : [daed6c43-b62d-4e39-99dc-bb2553141626] Completed 500 Internal Server Error in 246ms (Allocations: 69951)
+F, [2020-10-08T07:31:00.567341 #72728] FATAL -- : [daed6c43-b62d-4e39-99dc-bb2553141626]   
+[daed6c43-b62d-4e39-99dc-bb2553141626] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00005598adfabd38>):
+[daed6c43-b62d-4e39-99dc-bb2553141626]     1: <h1>React Routing Demo</h1>
+[daed6c43-b62d-4e39-99dc-bb2553141626]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[daed6c43-b62d-4e39-99dc-bb2553141626]   
+[daed6c43-b62d-4e39-99dc-bb2553141626] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:00.692830 #72728]  INFO -- : [8b7d311c-e347-4ea1-9a63-d86e5d331873] Started GET "/favicon.ico" for 127.0.0.1 at 2020-10-08 07:31:00 -0300
+F, [2020-10-08T07:31:00.694059 #72728] FATAL -- : [8b7d311c-e347-4ea1-9a63-d86e5d331873]   
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[8b7d311c-e347-4ea1-9a63-d86e5d331873]   
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+[8b7d311c-e347-4ea1-9a63-d86e5d331873] puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+I, [2020-10-08T07:31:16.902134 #72728]  INFO -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:16 -0300
+I, [2020-10-08T07:31:16.906603 #72728]  INFO -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:16.913093 #72728]  INFO -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:17.216124 #72728]  INFO -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 302.8ms | Allocations: 68797)
+I, [2020-10-08T07:31:17.216278 #72728]  INFO -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072] Completed 500 Internal Server Error in 309ms (Allocations: 69154)
+F, [2020-10-08T07:31:17.216828 #72728] FATAL -- : [546ef1ed-81f9-427c-8ec4-d7bd20a39072]   
+[546ef1ed-81f9-427c-8ec4-d7bd20a39072] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00005598addfc230>):
+[546ef1ed-81f9-427c-8ec4-d7bd20a39072]     1: <h1>React Routing Demo</h1>
+[546ef1ed-81f9-427c-8ec4-d7bd20a39072]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[546ef1ed-81f9-427c-8ec4-d7bd20a39072]   
+[546ef1ed-81f9-427c-8ec4-d7bd20a39072] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:18.843015 #72728]  INFO -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:18 -0300
+I, [2020-10-08T07:31:18.845627 #72728]  INFO -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:18.847453 #72728]  INFO -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:19.027915 #72728]  INFO -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 180.3ms | Allocations: 68793)
+I, [2020-10-08T07:31:19.028070 #72728]  INFO -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916] Completed 500 Internal Server Error in 182ms (Allocations: 69149)
+F, [2020-10-08T07:31:19.028607 #72728] FATAL -- : [b5c865e3-10e8-44f7-9f6b-cf6fea45b916]   
+[b5c865e3-10e8-44f7-9f6b-cf6fea45b916] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00005598ae982f28>):
+[b5c865e3-10e8-44f7-9f6b-cf6fea45b916]     1: <h1>React Routing Demo</h1>
+[b5c865e3-10e8-44f7-9f6b-cf6fea45b916]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[b5c865e3-10e8-44f7-9f6b-cf6fea45b916]   
+[b5c865e3-10e8-44f7-9f6b-cf6fea45b916] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:34.235762 #72728]  INFO -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:34 -0300
+I, [2020-10-08T07:31:34.237409 #72728]  INFO -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:34.239393 #72728]  INFO -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:34.449467 #72728]  INFO -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 209.8ms | Allocations: 68793)
+I, [2020-10-08T07:31:34.449713 #72728]  INFO -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58] Completed 500 Internal Server Error in 212ms (Allocations: 69149)
+F, [2020-10-08T07:31:34.452309 #72728] FATAL -- : [ff39ee60-61f0-4c72-a54e-97baf447ea58]   
+[ff39ee60-61f0-4c72-a54e-97baf447ea58] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00007f46ac87e048>):
+[ff39ee60-61f0-4c72-a54e-97baf447ea58]     1: <h1>React Routing Demo</h1>
+[ff39ee60-61f0-4c72-a54e-97baf447ea58]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[ff39ee60-61f0-4c72-a54e-97baf447ea58]   
+[ff39ee60-61f0-4c72-a54e-97baf447ea58] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:40.812677 #72728]  INFO -- : [89df9924-34d3-4070-a64a-2d1ec8081ead] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:40 -0300
+I, [2020-10-08T07:31:40.814444 #72728]  INFO -- : [89df9924-34d3-4070-a64a-2d1ec8081ead] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:40.819390 #72728]  INFO -- : [89df9924-34d3-4070-a64a-2d1ec8081ead]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:41.106903 #72728]  INFO -- : [89df9924-34d3-4070-a64a-2d1ec8081ead]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 287.2ms | Allocations: 68790)
+I, [2020-10-08T07:31:41.107034 #72728]  INFO -- : [89df9924-34d3-4070-a64a-2d1ec8081ead] Completed 500 Internal Server Error in 292ms (Allocations: 69143)
+F, [2020-10-08T07:31:41.107541 #72728] FATAL -- : [89df9924-34d3-4070-a64a-2d1ec8081ead]   
+[89df9924-34d3-4070-a64a-2d1ec8081ead] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00005598aec05b88>):
+[89df9924-34d3-4070-a64a-2d1ec8081ead]     1: <h1>React Routing Demo</h1>
+[89df9924-34d3-4070-a64a-2d1ec8081ead]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[89df9924-34d3-4070-a64a-2d1ec8081ead]   
+[89df9924-34d3-4070-a64a-2d1ec8081ead] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:52.637538 #72728]  INFO -- : [e98a7421-5259-45ed-ad49-869403a27ac2] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:52 -0300
+I, [2020-10-08T07:31:52.638562 #72728]  INFO -- : [e98a7421-5259-45ed-ad49-869403a27ac2] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:52.639816 #72728]  INFO -- : [e98a7421-5259-45ed-ad49-869403a27ac2]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:52.808553 #72728]  INFO -- : [e98a7421-5259-45ed-ad49-869403a27ac2]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 168.6ms | Allocations: 68790)
+I, [2020-10-08T07:31:52.808686 #72728]  INFO -- : [e98a7421-5259-45ed-ad49-869403a27ac2] Completed 500 Internal Server Error in 170ms (Allocations: 69143)
+F, [2020-10-08T07:31:52.809228 #72728] FATAL -- : [e98a7421-5259-45ed-ad49-869403a27ac2]   
+[e98a7421-5259-45ed-ad49-869403a27ac2] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00005598aef01ad0>):
+[e98a7421-5259-45ed-ad49-869403a27ac2]     1: <h1>React Routing Demo</h1>
+[e98a7421-5259-45ed-ad49-869403a27ac2]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[e98a7421-5259-45ed-ad49-869403a27ac2]   
+[e98a7421-5259-45ed-ad49-869403a27ac2] app/views/hello_world/index.html.erb:2
+I, [2020-10-08T07:31:54.274285 #72728]  INFO -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78] Started GET "/hello_world" for 127.0.0.1 at 2020-10-08 07:31:54 -0300
+I, [2020-10-08T07:31:54.275074 #72728]  INFO -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78] Processing by HelloWorldController#index as HTML
+I, [2020-10-08T07:31:54.275955 #72728]  INFO -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78]   Rendering hello_world/index.html.erb within layouts/hello_world
+I, [2020-10-08T07:31:54.488338 #72728]  INFO -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78]   Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 212.2ms | Allocations: 68790)
+I, [2020-10-08T07:31:54.488649 #72728]  INFO -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78] Completed 500 Internal Server Error in 213ms (Allocations: 69141)
+F, [2020-10-08T07:31:54.490023 #72728] FATAL -- : [c98dbe10-bbfc-470e-8970-74e6188bcb78]   
+[c98dbe10-bbfc-470e-8970-74e6188bcb78] ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00005598adf87320>:0x00007f46a0eb0288>):
+[c98dbe10-bbfc-470e-8970-74e6188bcb78]     1: <h1>React Routing Demo</h1>
+[c98dbe10-bbfc-470e-8970-74e6188bcb78]     2: <%= react_component("App", props: @hello_world_props, prerender: false) %>
+[c98dbe10-bbfc-470e-8970-74e6188bcb78]   
+[c98dbe10-bbfc-470e-8970-74e6188bcb78] app/views/hello_world/index.html.erb:2
