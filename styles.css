@@ -49,10 +49,17 @@ header ul li a:hover {
 .content {
   margin: 50px;
   font-size: 20px;
+  border: 1px solid #codigo da cor;   //aqui adiciona a borda
+  border-radius: 10px;  //aqui vc arredonda a borda
 }
 
 .content p{
   padding-bottom: 10px;
+}
+
+section h2 {
+  font-size: 30px; (ver qual tamanho fica melhor)
+  font-weight: bold; (pra ficar negrito)
 }
 
 .graficos {
