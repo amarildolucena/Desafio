@@ -73,15 +73,15 @@ header ul li a:hover {
 
 
 .size1{
-  width: 600px;
+  width: calc(50% - 20px);
   height: 400px;
   margin-bottom: 20px;
 }
 .size2{
-  width: 500px;
+  width: calc(42% - 20px);
   height: 400px;
 }
 .size3{
-  width: 700px;
+  width: calc(58% - 20px);
   height: 400px;
 }
