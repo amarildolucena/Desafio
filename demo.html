@@ -27,15 +27,16 @@
 
   <div class="content">
     <div class="graficos">
+
       <div id = "nuvem" class="grafico size1"></div>
-      <div class="grafico size1"> 
+      <div class="grafico size2"> 
         <svg id = "bolinhas" width=90% height=90%></svg>
         
         <button onClick="clicou()">Click Me!</button>
       </div>      
       
-      <div class="grafico size2"> <img src=""/></div>
       <div class="grafico size3"> <img src=""/></div>
+      <div class="grafico size4"> <img src=""/></div>
     </div>
   </div>
 
@@ -75,7 +76,8 @@
             .domain([0,1,2,3,4,5,6,10,15,20,100])            
             .range(["red","yellow", "Goldenrod","black","blue","gray", "green","cyan", "indigo", "darkMagenta", "marron", "thistle"]);
 
-    d3.layout.cloud().size([800, 300])
+    //d3.layout.cloud().size([800, 300])
+    d3.layout.cloud()
             .words(frequency_list)
             .rotate(0)
             .fontSize(function(d) { return d.size; })
@@ -83,15 +85,15 @@
             .start();
 
     function draw(words) {
-        // d3.select("body").select("content").select("graficos").select("grafico size2").append("svg")
         d3.select("#nuvem").append("svg")
-                .attr("width", 850)
-                .attr("height", 350)
+                //.attr("width", 850)
+                //.attr("height", 350)
                 .attr("class", "wordcloud")
                 .append("g")
                 // without the transform, words words would get cutoff to the left and top, they would
                 // appear outside of the SVG area
-                .attr("transform", "translate(320,200)")
+                //.attr("transform", "translate(320,200)")
+                .attr("transform", "translate(120,150)")
                 .selectAll("text")
                 .data(words)
                 .enter().append("text")
@@ -102,7 +104,6 @@
                 })
                 .text(function(d) { return d.text; });
     }
-
 
   </script>
 

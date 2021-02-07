@@ -11,10 +11,11 @@ header {
   align-items: center;
   border-bottom: 2px solid gray;
 
-  padding: 20px;
+  padding: 5px;
 
   font-family: 'Roboto', sans-serif;
 }
+
 header .selected {
   border-bottom: 3px solid #00000aaa;
 }
@@ -33,6 +34,7 @@ header ul li {
     list-style-type: none;
 
 }
+
 header ul li{
   margin-left: 10px;
 }
@@ -47,7 +49,7 @@ header ul li a:hover {
 }
 
 .content {
-  margin: 50px;
+  margin: 10px;
   font-size: 20px;
   border: 1px solid #codigo da cor;   //aqui adiciona a borda
   border-radius: 10px;  //aqui vc arredonda a borda
@@ -78,17 +80,40 @@ section h2 {
   margin-left: 20px;
 }
 
+svg{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+
+}
+
+g{
+  border: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 95%;
+  height: 95%;
+  margin-bottom: 5px;
+}
 
 .size1{
   width: calc(50% - 20px);
   height: 400px;
   margin-bottom: 20px;
 }
+
 .size2{
+  width: calc(50% - 20px);
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.size3{
   width: calc(42% - 20px);
   height: 400px;
 }
-.size3{
+
+.size4{
   width: calc(58% - 20px);
   height: 400px;
 }
