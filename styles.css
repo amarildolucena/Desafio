@@ -76,15 +76,21 @@ section h2 {
   border-radius: 10px;
 }
 
-.grafico + .grafico {
+/* .grafico + .grafico {
   margin-left: 20px;
+} */
+
+.graficos svg g {
+  border-radius: 10px;
+  width: calc(100% - 2px);
+  height: 398px;
 }
 
-svg{
+/* svg{ */
+.wordcloud{
   border-radius: 10px;
   width: 100%;
   height: 100%;
-
 }
 
 g{
@@ -106,6 +112,7 @@ g{
   width: calc(50% - 20px);
   height: 400px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .size3{
@@ -116,4 +123,5 @@ g{
 .size4{
   width: calc(58% - 20px);
   height: 400px;
+  margin-left: 20px;
 }
